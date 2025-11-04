@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.fahrenfarther.fahrenfartherservice.fahrenFartherService"
+            style="-fx-background-color: #f2f4f8;">
+
+    <!-- Left Sidebar -->
+    <left>
+        <VBox BorderPane.alignment="CENTER_LEFT" prefWidth="256" prefHeight="900" style="-fx-background-color: #ffffff;">
+            <!-- Placeholder for sidebar content -->
+            <Label text="Sidebar Placeholder" />
+        </VBox>
+    </left>
+
+    <!-- Top Header -->
+    <top>
+        <HBox BorderPane.alignment="CENTER" prefHeight="56" spacing="24" alignment="CENTER_LEFT" style="-fx-background-color: #ffffff; -fx-border-color: #d3d7de; -fx-border-width: 0 0 0.8 0;">
+            <HBox.margin>
+                <Insets left="24" right="24" />
+            </HBox.margin>
+            <!-- Menu Button -->
+            <Button text="" style="-fx-background-color: transparent; -fx-pref-width: 28; -fx-pref-height: 28;">
+                <!-- Icon omitted as per request (no PNGs) -->
+            </Button>
+        </HBox>
+    </top>
+
+    <!-- Center Main Content -->
+    <center>
+        <VBox spacing="24" alignment="TOP_LEFT" prefWidth="1184" prefHeight="900">
+            <VBox.margin>
+                <Insets top="24" left="24" right="24" />
+            </VBox.margin>
+
+            <!-- Dashboard Title Section -->
+            <VBox spacing="4">
+                <Label text="Dashboard" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #29303d; -fx-font-family: 'Segoe UI';" />
+                <Label text="Overview of your car rental business" style="-fx-font-size: 14px; -fx-text-fill: #626d84; -fx-font-family: 'Segoe UI';" />
+            </VBox>
+
+            <!-- Metrics Cards -->
+            <HBox spacing="16" alignment="CENTER_LEFT">
+                <!-- Total Cars Card -->
+                <VBox prefWidth="272" prefHeight="134" spacing="8" alignment="CENTER_LEFT" style="-fx-background-color: #ffffff; -fx-border-color: #d3d7de; -fx-border-radius: 8; -fx-background-radius: 8; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 2, 0, 0, 1);">
+                    <VBox.margin>
+                        <Insets top="25" left="25" right="25" bottom="25" />
+                    </VBox.margin>
+                    <HBox alignment="CENTER_LEFT" spacing="130">
+                        <VBox spacing="4">
+                            <Label text="Total Cars" style="-fx-font-size: 14px; -fx-text-fill: #626d84; -fx-font-family: 'Segoe UI';" />
+                            <Label text="0" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #29303d; -fx-font-family: 'Segoe UI';" />
+                            <Label text="0 available" style="-fx-font-size: 12px; -fx-text-fill: #626d84; -fx-font-family: 'Segoe UI';" />
+                        </VBox>
+                        <!-- Icon omitted as per request (no PNGs) -->
+                    </HBox>
+                </VBox>
+
+                <!-- Total Users Card -->
+                <VBox prefWidth="272" prefHeight="134" spacing="8" alignment="CENTER_LEFT" style="-fx-background-color: #ffffff; -fx-border-color: #d3d7de; -fx-border-radius: 8; -fx-background-radius: 8; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 2, 0, 0, 1);">
+                    <VBox.margin>
+                        <Insets top="25" left="25" right="25" bottom="25" />
+                    </VBox.margin>
+                    <HBox alignment="CENTER_LEFT" spacing="77">
+                        <VBox spacing="4">
+                            <Label text="Total Users" style="-fx-font-size: 14px; -fx-text-fill: #626d84; -fx-font-family: 'Segoe UI';" />
+                            <Label text="0" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #29303d; -fx-font-family: 'Segoe UI';" />
+                            <Label text="Registered customers" style="-fx-font-size: 12px; -fx-text-fill: #626d84; -fx-font-family: 'Segoe UI';" />
+                        </VBox>
+                        <!-- Icon omitted as per request (no PNGs) -->
+                    </HBox>
+                </VBox>
+
+                <!-- Active Rentals Card -->
+                <VBox prefWidth="272" prefHeight="134" spacing="8" alignment="CENTER_LEFT" style="-fx-background-color: #ffffff; -fx-border-color: #d3d7de; -fx-border-radius: 8; -fx-background-radius: 8; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 2, 0, 0, 1);">
+                    <VBox.margin>
+                        <Insets top="25" left="25" right="25" bottom="25" />
+                    </VBox.margin>
+                    <HBox alignment="CENTER_LEFT" spacing="104">
+                        <VBox spacing="4">
+                            <Label text="Active Rentals" style="-fx-font-size: 14px; -fx-text-fill: #626d84; -fx-font-family: 'Segoe UI';" />
+                            <Label text="0" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #29303d; -fx-font-family: 'Segoe UI';" />
+                            <Label text="Currently active" style="-fx-font-size: 12px; -fx-text-fill: #626d84; -fx-font-family: 'Segoe UI';" />
+                        </VBox>
+                        <!-- Icon omitted as per request (no PNGs) -->
+                    </HBox>
+                </VBox>
+
+                <!-- Revenue Card -->
+                <VBox prefWidth="272" prefHeight="134" spacing="8" alignment="CENTER_LEFT" style="-fx-background-color: #ffffff; -fx-border-color: #d3d7de; -fx-border-radius: 8; -fx-background-radius: 8; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 2, 0, 0, 1);">
+                    <VBox.margin>
+                        <Insets top="25" left="25" right="25" bottom="25" />
+                    </VBox.margin>
+                    <HBox alignment="CENTER_LEFT" spacing="131">
+                        <VBox spacing="4">
+                            <Label text="Revenue" style="-fx-font-size: 14px; -fx-text-fill: #626d84; -fx-font-family: 'Segoe UI';" />
+                            <Label text="₱0" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #29303d; -fx-font-family: 'Segoe UI';" />
+                            <Label text="This month" style="-fx-font-size: 12px; -fx-text-fill: #626d84; -fx-font-family: 'Segoe UI';" />
+                        </VBox>
+                        <!-- No icon in original -->
+                    </HBox>
+                </VBox>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
